@@ -7,7 +7,7 @@ export interface ISendInfo {
   destinationAddress: string;
 }
 
-export const FINDORA_EVM_CHAIN_ID = '2154'; // Findora EVM
+export const FINDORA_EVM_CHAIN_ID = '3333'; // Findora EVM
 
 export const FINDORA_NETWORK = {
   chainId: FINDORA_EVM_CHAIN_ID,
@@ -17,13 +17,13 @@ export const FINDORA_NETWORK = {
     symbol: 'FRA',
     decimals: 18,
   },
-  rpcUrls: ['https://prod-forge.prod.findora.org:8545'],
-  blockExplorerUrls: ['https://prod-forge-blockscout.prod.findora.org/'],
+  rpcUrls: ['https://dev-qa01.dev.findora.org:8545'],
+  blockExplorerUrls: ['https://dev-qa01-blockscout.dev.findora.org/'],
 };
 
 export const CONTRACTS_ADDRESS = {
-  prismBridge: '0x899d4d8f441E5B59EB21ceb58fce723bb5A85C55',
-  prismBridgeLedger: '0xBeeBd2B2E9C29E416bF5d774526644f7C854cE01',
+  prismBridge: '0x5f9552fEd754F20B636C996DaDB32806554Bb995',
+  prismBridgeLedger: '0xa897D081bf941bBD60E831EDFE219D5887eFC755',
 };
 
 export const DEFAULT_SEND_INFO: ISendInfo = {
@@ -37,5 +37,5 @@ export const DEFAULT_SEND_INFO: ISendInfo = {
 
 export const TOKENS = [
   { value: '', label: 'FRA' },
-  { value: '0x5b15Cdff7Fe65161C377eDeDc34A4E4E31ffb00B', label: 'zkUSDT' },
+  { value: '0xA1Ba325d71204e89cA44C5378E84dc1AAcD45f9e', label: 'zkUSDT' },
 ]

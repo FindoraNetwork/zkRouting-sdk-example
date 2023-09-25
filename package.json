@@ -148,7 +148,7 @@
     "use-media": "^1.4.0",
     "web3": "^1.6.0",
     "web3-eth-contract": "^1.6.1",
-    "zk-routing-sdk": "^1.0.0"
+    "zk-routing-sdk": "^1.1.1"
   },
   "browserslist": {
     "production": [

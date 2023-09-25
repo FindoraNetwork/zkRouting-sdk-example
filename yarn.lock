@@ -13062,10 +13062,10 @@ yoctodelay@^1.1.0:
   resolved "https://registry.yarnpkg.com/yoctodelay/-/yoctodelay-1.2.0.tgz#0d020c8bcec22989369db31e5d352acc6a13eda8"
   integrity sha512-12y/P9MSig9/5BEhBgylss+fkHiCRZCvYR81eH35NW9uw801cvJt31EAV+WOLcwZRZbLiIQl/hxcdXXXFmGvXg==
 
-zk-routing-sdk@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/zk-routing-sdk/-/zk-routing-sdk-1.0.0.tgz#c2522dc5418e0682dab2f55fcd30f5a305f3c386"
-  integrity sha512-ZTlafxXRxZeDRw/rR1VtLrrq+f66M+10Xivf1xj3OhEk2H0vrcVcgt8vvzq2p9vAe7+oQMG4bQdaFo8GohHd9w==
+zk-routing-sdk@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/zk-routing-sdk/-/zk-routing-sdk-1.1.1.tgz#4428e21dcc4170d666d961077e972554558b6a7d"
+  integrity sha512-43wzisNhygwnkBfXx1B5fYzEX9aLhkbOW3e/KFQSl02art5CrOYg5PnHh+ZFjZKCl5TCFdZk5UslxGdfWb1F1Q==
   dependencies:
     amfe-flexible "^2.2.1"
     axios "^0.21.1"

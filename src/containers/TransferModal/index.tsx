@@ -26,7 +26,6 @@ const TransferModal: React.FC<ITransferModalProps> = ({ sendInfo, onClose }) => 
       const findoraWallets = await findora.keypair.getWallet();
       const { walletStart, walletEnd, anonWallet } = findoraWallets;
 
-   
       let depositTxnReceipt = null;
       if (sendInfo.tokenAddress) {
         // FRC20(Customized token) To Findora Native Chain
@@ -53,7 +52,7 @@ const TransferModal: React.FC<ITransferModalProps> = ({ sendInfo, onClose }) => 
 
    
       const { response: sids } = await findora.apis.getOwnedSids(walletStart.publickey);
-      const barToAbarResult =  await findora.transfer.barToAbar(findoraWallets, sids);
+      const barToAbarResult = await findora.transfer.barToAbar(findoraWallets, sids);
       if (barToAbarResult.txnLog) throw new Error(`barToAbar Error: ${barToAbarResult.txnLog}`);
       console.log('barToAbar txnHash: ', barToAbarResult.txnHash);
 
@@ -61,8 +60,6 @@ const TransferModal: React.FC<ITransferModalProps> = ({ sendInfo, onClose }) => 
       const abarToBarResult = await findora.transfer.abarToBar(anonWallet, walletEnd, barToAbarResult.commitments);
       if (abarToBarResult.txnLog) throw new Error(`abarToBar Error: ${abarToBarResult.txnLog}`);
       console.log('abarToBar txnHash: ', abarToBarResult.txnHash);
-
-   
 
       let assetCode = '';
       if (sendInfo.tokenAddress) {
